@@ -1,0 +1,43 @@
+/* 바탕 및 기본 세팅 */
+body {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+/* 제목 스타일 */
+article {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+/* 링크 카드 스타일 */
+a.card {
+    display: inline-block;
+    background: #ff6f61;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 15px 30px;
+    border-radius: 50px;
+    box-shadow: 0 6px 12px rgba(255, 111, 97, 0.6);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-size: 1.2rem;
+}
+
+a.card:hover,
+a.card:focus {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(255, 111, 97, 0.8);
+    outline: none;
+}

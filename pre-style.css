@@ -1,0 +1,111 @@
+/* 공통 스타일 */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+.page-title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* 프로필 스타일 */
+.profile {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+/* 본문 스타일 */
+.content {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #1e88e5;
+    margin-bottom: 10px;
+}
+
+/* 기본 (데스크탑) */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 20px;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+/* 모바일: 767px 이하 → 세로 정렬 */
+@media (max-width: 767px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .profile {
+        margin-bottom: 20px;
+    }
+
+    .content {
+        padding: 20px;
+    }
+
+    body {
+        font-size: 14px;
+    }
+
+    .page-title {
+        font-size: 24px;
+    }
+}
+
+/* 태블릿: 768px ~ 1023px */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .grid-container {
+        grid-template-columns: 1fr 2fr;
+        grid-gap: 15px;
+    }
+
+    body {
+        font-size: 15px;
+    }
+
+    .content {
+        padding: 25px;
+    }
+
+    .page-title {
+        font-size: 28px;
+    }
+}
+
+/* 데스크탑: 1024px 이상 */
+@media (min-width: 1024px) {
+    body {
+        font-size: 16px;
+    }
+
+    .page-title {
+        font-size: 32px;
+    }
+}
