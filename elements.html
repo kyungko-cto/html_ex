@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>블록요소, 인라인요소, 인라인 블록 요소 비교</title>
+    <link rel="stylesheet" href="./style.css">
+    <style> <!-- 이게 우선 css적용위해선 이거 없어져야해 -->
+        h2{
+            background-color: aquamarine;
+        }
+        </style>
+</head>
+<body>
+
+<h1>블록요소, 인라인요소, 인라인 블록 요소 비교</h1>
+
+<section>
+    <h2>블록 요소</h2>
+    <p>블록 요소는 항상 새로운 줄에서 시작 화면 전체 너비 차지
+        대표적인 블록 요소로는 <code>&lt;div&gt;</code>,
+        <code>&lt;p&gt;</code>,
+        <code>&lt;h1&gt;</code>등이 잇습니다.</p>
+
+    <div>이것은 <strong>블록요소</strong>입니다.</div>
+    <div>이것은 또 다른 <strong> 블록요소</strong>입니다.</div>
+    </section>
+
+<section>
+    <h2>인라인 요소</h2>
+    <p>인라인 요소는 줄 바꿈 없이 자른 요소와 같은 줄에 위치
+        콘텐츠의 너비만큼 차지.
+        대표적인 인라인 요소로는 <code>&lt;span&gt;</code>,
+        <code>&lt;a&gt;</code>, <code>&lt;strong&gt;</code>
+
+        <span>이것은 <strong> 인라인 요소</strong>입니다.</span>
+        <span>이것은 또 다른 <strong>인라인 요소</strong>입니다.</span>
+    <p>위 두 <code>&lt;span&gt;</code>요소는 같은 줄에 위치</p>
+</section>
+
+<section>
+    <h2>인라인 블록요소</h2>
+    <p>인라인 블록요소는 인라인 요소처럼 한줄에 위치 하지만,
+    블록요소처럼 너비와 높이를 지정할 수 있습니다.
+        <code>&lt;input&gt;</code>태그는 대표적인 인라인 블록요소</p>
+    <input type="button" style="width:100px" value="이것은 인라인 블록 요소">
+    <input type="button" value="또다른 ">
+    <p>위 두 <code>&lt;input&gt;</code>요소는
+        같은줄에 위치 하며 각 요소의 너비가 다르게 설정 width같은거는 css활용?</p>
+
+</section>>
+</body>>
+</html>

@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    background: linear-gradient(
+            rgba(255, 223, 186, 0.6),
+            rgba(186, 225, 255, 0.6)
+    ),
+    url('https://images.unsplash.com/photo-1503264116251-35a269479413') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    font-family: 'Arial', sans-serif;
+}
+
+/* 제목 스타일 */
+.title {
+    font-size: 45px;
+    font-weight: normal;
+    color: rebeccapurple;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* 카드 레이아웃 */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* 카드 기본 스타일 */
+.card {
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    width: 200px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+    color: white;
+}
+
+/* hover 효과 */
+.card:hover {
+    transform: translateY(-5px);
+    filter: brightness(1.1);
+}
+
+/* MBTI별 배경색 */
+.enfp { background-color: rgba(255, 105, 180, 0.6); }
+.istj { background-color: rgba(70, 130, 180, 0.6); }
+.infj { background-color: rgba(186, 85, 211, 0.6); }
+.entp { background-color: rgba(255, 165, 0, 0.6); }
+.esfp { background-color: rgba(255, 99, 71, 0.6); }
+.esfj { background-color: rgba(60, 179, 113, 0.6); }
+.enfj { background-color: rgba(255, 215, 0, 0.6); }
